@@ -29,10 +29,10 @@ const Footer = () => {
             Contact
           </Link>
           <Link to="/" className="link link-hover">
-            Jobs
+            location
           </Link>
           <Link to="/" className="link link-hover">
-            Press kit
+            Counter
           </Link>
         </div>
         <div>
@@ -49,7 +49,7 @@ const Footer = () => {
         </div>
       </footer>
       <div className="text-center mb-5">
-        <p>Copyright © 2022 - All right reserved by <span className="text-red-500 font-bold">MD RAHAT ISLAM</span></p>
+        <p>Copyright © 2022 - All right reserved by <span className="text-red-500 font-bold">Car Buy&Sell</span></p>
       </div>
     </div>
   );
