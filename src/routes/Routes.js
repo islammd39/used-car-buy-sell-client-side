@@ -3,6 +3,7 @@ import Main from "../layout/Main/Main";
 import Blog from "../pages/Blog/Blog";
 import ErrorPage from "../pages/Error/ErrorPage";
 import Home from "../pages/Home/Home/Home";
+import CategoriesCard from "../pages/Home/Product/CategoriesCard";
 import Login from "../pages/Login/Login";
 
 export const router = createBrowserRouter([
@@ -17,6 +18,11 @@ export const router = createBrowserRouter([
             {
                 path:"/login",
                 element:<Login></Login>    
+            },
+            {
+                path:"/category:id",
+                loader:``,
+                element:<CategoriesCard></CategoriesCard>   
             },
             {
                 path:"/blog",
