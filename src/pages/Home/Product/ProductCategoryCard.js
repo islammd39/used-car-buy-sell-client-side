@@ -2,12 +2,12 @@ import React from "react";
 
 const ProductCategoryCard = ({ p }) => {
     const {image, companyName, original, resellPrice, since, location, postTime, sellerName}= p
-  console.log(p);
+//   console.log(p);
   return (
     <div>
       <div className="card w-5/6 lg:card-side bg-base-100 shadow-xl mx-auto">
         <figure>
-          <img src={image} className="h-72 w-96" alt="car" />
+          <img src={image} className="lg:h-96 lg:w-96" alt="car" />
         </figure>
         <div className="card-body">
           <h2 className="card-title">Company Name : {companyName}</h2>

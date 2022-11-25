@@ -8,9 +8,8 @@ const CategoriesCard = () => {
 
     return (
         <div className='my-10'>
-            <div className='text-center'>
-            <h2>{product.length}</h2>
-            <h2>{name}</h2>
+            <div className='text-center my-5'>
+            <h2 className='text-xl font-semibold text-primary'>{name}</h2>
             </div>
            <div className='grid grid-cols-1 gap-10'>
             {

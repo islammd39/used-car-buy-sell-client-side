@@ -11,7 +11,7 @@ const Product = () => {
     return (
         <div className='my-10'>
             <h2 className="text-center text-2xl my-5">Our Products Category</h2>
-          <div className='grid grid-cols-1 lg:grid-cols-3 mx-auto'>
+          <div className='grid grid-cols-1 lg:grid-cols-3 mx-auto gap-5'>
             {
                 productCategories.map(pCategory => <CategoriesSection key={pCategory._id} pCategory={pCategory}></CategoriesSection>)
             }
