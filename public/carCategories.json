@@ -12,6 +12,16 @@
         "since":"2018",
         "sellerName":"Raj Rahim",
         "image":"https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+      },
+      {
+        "carId": "2",
+        "companyName": "Suzuki Alto",
+        "location": "Dhaka Gazipur",
+        "original": "6 lakhs",
+        "resellPrice": "2.5 lakhs",
+        "since":"2019",
+        "sellerName":"Rahim Islam",
+        "image":"https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
       }
     ]
   },
@@ -21,13 +31,23 @@
     "product": [
       {
         "carId": "1",
-        "companyName": "Suzuki celerio",
-        "location": "Dhaka Uttara",
-        "original": "7 lakhs",
-        "resellPrice": "3 lakhs",
-        "since":"2018",
-        "sellerName":"Raj Rahim",
-        "image":"https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+        "companyName": "BMW One",
+        "location": "Dhaka Banani",
+        "original": "27 lakhs",
+        "resellPrice": "9 lakhs",
+        "since":"2019",
+        "sellerName":"Rajim Raj",
+        "image":"https://images.unsplash.com/photo-1543796076-e9b02d7c37e8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=425&q=80"
+      },
+      {
+        "carId": "2",
+        "companyName": "BMW Two",
+        "location": "Dhaka Banani",
+        "original": "22 lakhs",
+        "resellPrice": "7 lakhs",
+        "since":"2016",
+        "sellerName":"Rayhan",
+        "image":"https://images.unsplash.com/flagged/photo-1553505192-acca7d4509be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=890&q=80"
       }
     ]
   },
