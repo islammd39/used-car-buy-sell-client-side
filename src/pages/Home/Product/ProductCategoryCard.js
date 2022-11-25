@@ -1,21 +1,29 @@
-import React from 'react';
+import React from "react";
 
-const ProductCategoryCard = ({p}) => {
-    // console.log(p);
-    return (
-        <div>
-            <div className="card lg:card-side bg-base-100 shadow-xl">
-  <figure><img src="https://placeimg.com/400/400/arch" alt="Album"/></figure>
-  <div className="card-body">
-    <h2 className="card-title">New album is released!</h2>
-    <p>Click the button to listen on Spotiwhy app.</p>
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">Listen</button>
-    </div>
-  </div>
-</div>
+const ProductCategoryCard = ({ p }) => {
+    const {image, companyName, original, resellPrice, since, location, postTime, sellerName}= p
+  console.log(p);
+  return (
+    <div>
+      <div className="card w-5/6 lg:card-side bg-base-100 shadow-xl mx-auto">
+        <figure>
+          <img src={image} className="h-72 w-96" alt="car" />
+        </figure>
+        <div className="card-body">
+          <h2 className="card-title">Company Name : {companyName}</h2>
+          <p>Original Price : {original}</p>
+          <p>Resell Price : {resellPrice}</p>
+          <p>Register Year : {since}</p>
+          <p>Location : {location}</p>
+          <p>Date of Post : {postTime}</p>
+          <p>Owner : {sellerName}</p>
+          <div className="card-actions justify-start">
+            <button className="btn btn-primary">Book Now</button>
+          </div>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default ProductCategoryCard;
