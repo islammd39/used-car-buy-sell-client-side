@@ -4,7 +4,7 @@ import CategoriesSection from './CategoriesSection';
 const Product = () => {
     const [productCategories,setProductCategories]=useState([])
     useEffect(()=>{
-        fetch('carCategories.json')
+        fetch('http://localhost:5000/categories')
         .then(res=>res.json())
         .then(data =>setProductCategories(data))
     },[])
