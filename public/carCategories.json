@@ -42,7 +42,7 @@
       {
         "carId": "2",
         "companyName": "BMW Two",
-        "location": "Dhaka Banani",
+        "location": "Dhaka mirpur",
         "original": "22 lakhs",
         "resellPrice": "7 lakhs",
         "since":"2016",
@@ -57,13 +57,23 @@
     "product": [
       {
         "carId": "1",
-        "companyName": "Suzuki celerio",
+        "companyName": "classic",
         "location": "Dhaka Uttara",
-        "original": "7 lakhs",
-        "resellPrice": "3 lakhs",
-        "since":"2018",
-        "sellerName":"Raj Rahim",
-        "image":"https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+        "original": "22 lakhs",
+        "resellPrice": "10 lakhs",
+        "since":"2016",
+        "sellerName":"Raj",
+        "image":"https://images.unsplash.com/photo-1533591362725-979dfce672b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=454&q=80"
+      },
+      {
+        "carId": "2",
+        "companyName": "classic bold",
+        "location": "Dhaka new market",
+        "original": "20 lakhs",
+        "resellPrice": "9 lakhs",
+        "since":"2016",
+        "sellerName":"Rajib",
+        "image":"https://images.unsplash.com/photo-1464475355873-c68befb75ce9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
       }
     ]
   }
