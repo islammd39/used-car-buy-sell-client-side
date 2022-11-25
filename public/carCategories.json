@@ -1,0 +1,51 @@
+[
+  {
+    "id": "1",
+    "name": "Mini Car(4 seaters)",
+    "product": [
+      {
+        "carId": "1",
+        "companyName": "Suzuki celerio",
+        "location": "Dhaka Uttara",
+        "original": "7 lakhs",
+        "resellPrice": "3 lakhs",
+        "since":"2018",
+        "sellerName":"Raj Rahim",
+        "image":"https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Luxury Car(6 seaters)",
+    "product": [
+      {
+        "carId": "1",
+        "companyName": "Suzuki celerio",
+        "location": "Dhaka Uttara",
+        "original": "7 lakhs",
+        "resellPrice": "3 lakhs",
+        "since":"2018",
+        "sellerName":"Raj Rahim",
+        "image":"https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Micro Car(12 seaters)",
+    "product": [
+      {
+        "carId": "1",
+        "companyName": "Suzuki celerio",
+        "location": "Dhaka Uttara",
+        "original": "7 lakhs",
+        "resellPrice": "3 lakhs",
+        "since":"2018",
+        "sellerName":"Raj Rahim",
+        "image":"https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+      }
+    ]
+  }
+  
+]

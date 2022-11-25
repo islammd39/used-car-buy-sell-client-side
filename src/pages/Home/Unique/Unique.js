@@ -4,7 +4,9 @@ import service from "../../../assets/images/car-service.png"
 
 const Unique = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 lg:mx-48 lg:mb-10">
+    <div>
+      <h2 className="text-center text-2xl my-5">Our Service</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 lg:mx-48 lg:mb-10">
       <div className="mx-auto">
         <div className="bg-base-100 shadow-xl flex items-center lg:p-5">
         <figure><img src={money} alt="Money"/></figure>
@@ -23,6 +25,7 @@ const Unique = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };
