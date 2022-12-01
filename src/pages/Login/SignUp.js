@@ -48,6 +48,20 @@ const SignUp = () => {
             Register !!!
           </h2>
           <form onSubmit={handleSubmit(onSubmit)} className="w-96">
+            <div className="text-center flex">
+               <div className="flex items-center">
+            <input type="radio" value= "buyer" name="radio-1" className="radio radio-primary" checked />
+               <label className="label">
+                <span className="label-text">Buyer</span>
+                </label>
+               </div>
+               <div className="flex items-center">
+               <input type="radio" value= "seller" name="radio-1" className="radio radio-primary" />             
+                <label className="label">
+                <span className="label-text">Seller</span>
+                </label>
+               </div>  
+            </div>
             <div className="form-control w-full">
               <label className="label">
                 <span className="label-text">Your name</span>
@@ -103,7 +117,7 @@ const SignUp = () => {
             <input
               type="submit"
               value="Sign up"
-              className="btn btn-accent w-full text-white mt-5"
+              className="btn btn-primary w-full text-white mt-5"
             />
             {signError && <p className="text-center font-bold text-error">{signError}</p>}
             <p className="text-center mb-3">

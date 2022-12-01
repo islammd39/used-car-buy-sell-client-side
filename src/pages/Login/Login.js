@@ -77,7 +77,7 @@ const Login = () => {
           <p>{error}</p>
           <p className="text-center mb-3">
             <span className="label-text">
-              new to doctor website ? please
+              new to website ? please
               <Link className="text-secondary text-lg" to="/signup">
                 Register
               </Link>
