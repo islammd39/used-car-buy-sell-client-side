@@ -5,6 +5,7 @@ import ErrorPage from "../pages/Error/ErrorPage";
 import Home from "../pages/Home/Home/Home";
 import CategoriesCard from "../pages/Home/Product/CategoriesCard";
 import Login from "../pages/Login/Login";
+import SignUp from "../pages/Login/SignUp";
 
 export const router = createBrowserRouter([
     {
@@ -18,6 +19,10 @@ export const router = createBrowserRouter([
             {
                 path:"/login",
                 element:<Login></Login>    
+            },
+            {
+                path:"/signup",
+                element:<SignUp></SignUp>
             },
             {
                 path:"/category/:id",
