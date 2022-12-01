@@ -5,39 +5,41 @@ import { AuthContext } from "../../context/AuthProvider";
 import toast from "react-hot-toast";
 
 const SignUp = () => {
-  const [signError, setSignError]=useState('')
+  const [signError, setSignError] = useState("");
   const {
     register,
     formState: { errors },
     handleSubmit,
   } = useForm();
-  const {createUser, updateUser} = useContext(AuthContext)
-  const navigate = useNavigate()
+  const { createUser, updateUser } = useContext(AuthContext);
+  const navigate = useNavigate();
+  const select = ()=>{
+    
+  }
   const onSubmit = (data) => {
-    console.log(data)
-    setSignError(" ")
-    createUser(data.email, data.password)
-    .then(result=>{
-      const user = result.user
-      console.log(user);
-      toast('Successfully create account')
-      const userInfo ={
-        displayName:data.name
-      }
-      updateUser(userInfo)
-      .then(()=>{
-        navigate('/')
+      console.log(data);
+      setSignError(" ");
+      createUser(data.email, data.password)
+      .then((result) => {
+          const user = result.user;
+          console.log(user);
+          toast.success("Successfully create account");
+          
+        const userInfo = {
+          displayName: data.name,
+        };
+        updateUser(userInfo)
+          .then(() => {
+            navigate("/");
+          })
+          .catch((err) => {
+            console.error(err);
+          });
       })
-      .catch(err =>{
-        console.error(err)
-      })
-      
-    })
-    .catch(error => {
-      console.error(error)
-      setSignError(error.message)
-
-    })
+      .catch((error) => {
+        console.error(error);
+        setSignError(error.message);
+      });
   };
 
   return (
@@ -49,18 +51,31 @@ const SignUp = () => {
           </h2>
           <form onSubmit={handleSubmit(onSubmit)} className="w-96">
             <div className="text-center flex">
-               <div className="flex items-center">
-            <input type="radio" value= "buyer" name="radio-1" className="radio radio-primary" checked />
-               <label className="label">
-                <span className="label-text">Buyer</span>
-                </label>
-               </div>
-               <div className="flex items-center">
-               <input type="radio" value= "seller" name="radio-1" className="radio radio-primary" />             
+              <div className="flex items-center">
+                <input
+                  type="radio"
+                  onChange={select}
+                  value="buyer"
+                  name="radio-1"
+                  className="radio radio-primary"
+                  checked
+                />
                 <label className="label">
-                <span className="label-text">Seller</span>
+                  <span className="label-text">Buyer</span>
                 </label>
-               </div>  
+              </div>
+              <div className="flex items-center">
+                <input
+                  {...register("Seller")}
+                  type="radio"
+                  value="seller"
+                  name="radio-1"
+                  className="radio radio-primary"
+                />
+                <label className="label">
+                  <span className="label-text">Seller</span>
+                </label>
+              </div>
             </div>
             <div className="form-control w-full">
               <label className="label">
@@ -105,7 +120,10 @@ const SignUp = () => {
                     value: 6,
                     message: "password must be six character",
                   },
-                  pattern: {value:/^(?=[^A-Z]*[A-Z])(?=[^a-z]*[a-z])(?=[^0-9]*[0-9])/, message:"password must be strong" }
+                  pattern: {
+                    value: /^(?=[^A-Z]*[A-Z])(?=[^a-z]*[a-z])(?=[^0-9]*[0-9])/,
+                    message: "password must be strong",
+                  },
                 })}
                 type="password"
                 className="input input-bordered w-full"
@@ -119,7 +137,9 @@ const SignUp = () => {
               value="Sign up"
               className="btn btn-primary w-full text-white mt-5"
             />
-            {signError && <p className="text-center font-bold text-error">{signError}</p>}
+            {signError && (
+              <p className="text-center font-bold text-error">{signError}</p>
+            )}
             <p className="text-center mb-3">
               <span className="label-text">
                 Already have an account ? please
