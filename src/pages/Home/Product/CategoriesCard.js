@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import ProductCategoryCard from './ProductCategoryCard';
+import ProductModal from './ProductModal';
 
 const CategoriesCard = () => {
     const {name, product}= useLoaderData()
+    const [pCategory, setPCategory] = useState(null)
     // console.log(product);
 
     return (
@@ -13,9 +15,13 @@ const CategoriesCard = () => {
             </div>
            <div className='grid grid-cols-1 gap-10'>
             {
-                product.map(p=> <ProductCategoryCard key={p.carId} p={p}></ProductCategoryCard>)
+                product.map(p=> <ProductCategoryCard setPCategory={setPCategory} key={p.carId} p={p}></ProductCategoryCard>)
             }
            </div>
+           {
+            pCategory &&
+            <ProductModal setPCategory={setPCategory} pCategory={pCategory}></ProductModal>
+            }
         </div>
     );
 };

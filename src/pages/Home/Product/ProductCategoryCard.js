@@ -1,6 +1,6 @@
 import React from "react";
 
-const ProductCategoryCard = ({ p }) => {
+const ProductCategoryCard = ({ p , setPCategory }) => {
     const {image, companyName, original, resellPrice, since, location, postTime, sellerName}= p
   // console.log(p);
   return (
@@ -18,7 +18,7 @@ const ProductCategoryCard = ({ p }) => {
           <p>Date of Post : {postTime}</p>
           <p>Owner : {sellerName}</p>
           <div className="card-actions justify-start">
-            <button className="btn btn-primary">Book Now</button>
+          <label onClick={()=>setPCategory(p)} htmlFor="booking-modal" className="btn btn-primary">Book Now</label>
           </div>
         </div>
       </div>
