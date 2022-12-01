@@ -12,15 +12,14 @@ const ProductModal = ({pCategory, setPCategory}) => {
         const price = form.resellPrice.value;
         const number = form.number.value;
 
-        const booking ={
+        const carBooking ={
             car:companyName,
             name,
             email,
             price,
             phone:number
         }
-
-        console.log(booking);
+        console.log(carBooking);
         setPCategory(null)
 
     }
