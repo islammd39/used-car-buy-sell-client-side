@@ -29,7 +29,7 @@ export const router = createBrowserRouter([
             {
                 path:"/category/:id",
                 element:<PrivateRouter><CategoriesCard></CategoriesCard></PrivateRouter>,   
-                loader:({params}) => fetch(`http://localhost:5000/categories/${params.id}`)
+                loader:({params}) => fetch(`https://b612-used-products-resale-server-side-islammd39.vercel.app/categories/${params.id}`)
             },
             {
                 path:"/blog",

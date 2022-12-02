@@ -1,8 +1,9 @@
 import React, { useContext } from 'react';
+import toast from 'react-hot-toast';
 import { AuthContext } from '../../../context/AuthProvider';
 
 const ProductModal = ({pCategory, setPCategory}) => {
-    const {user} = useContext(AuthContext)
+    const {user, loading} = useContext(AuthContext)
     const {companyName, resellPrice} = pCategory
     const handleModal = e =>{
         e.preventDefault()
@@ -19,8 +20,28 @@ const ProductModal = ({pCategory, setPCategory}) => {
             price,
             phone:number
         }
-        console.log(carBooking);
-        setPCategory(null)
+      //   fetch('https://b612-used-products-resale-server-side-islammd39.vercel.app/bookings', {
+      //     method: 'POST',
+      //     headers: {
+      //         'content-type': 'application/json'
+      //     },
+      //     body: JSON.stringify(carBooking)
+      // })
+      //     .then(res => res.json())
+      //     .then(data => {
+      //         console.log(data);
+      //         if(loading){
+      //           <p>loading ....</p>
+      //         }
+      //         if (data.acknowledged) {
+      //             toast.success('Booking confirmed');
+      //           }
+      //           else{
+      //             toast.error(data.message);
+      //           }
+      //         })
+              console.log(carBooking);
+              setPCategory(null)
 
     }
     return (

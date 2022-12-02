@@ -4,7 +4,7 @@ import CategoriesSection from './CategoriesSection';
 const Product = () => {
     const [productCategories,setProductCategories]=useState([])
     useEffect(()=>{
-        fetch('http://localhost:5000/categories')
+        fetch('https://b612-used-products-resale-server-side-islammd39.vercel.app/categories')
         .then(res=>res.json())
         .then(data =>setProductCategories(data))
     },[])
